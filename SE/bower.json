@@ -1,0 +1,19 @@
+{
+  "name": "SE",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ConcreteBarricade/sooner",
+  "authors": [
+    "Vttran918 <vttran918@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
