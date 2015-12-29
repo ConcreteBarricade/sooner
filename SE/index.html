@@ -13,25 +13,47 @@
 	
 </head>
 	
-<body>
-	        <!-- Main Toolbar -->
-        <paper-toolbar id="mainToolbar" >
-         
-
+<body unresolved class="fullbleed layout vertical">
+	<template is="dom-bind" id="app">
+		
+     
+<paper-drawer-panel force-narrow>
+	<paper-header-panel drawer>
+		<paper-toolbar></paper-toolbar>
+		<div> Drawer Content...</div>
+	</paper-header-panel>  
+	
+	<paper-header-panel main>     
+			<!-- Main Toolbar -->
+        <paper-toolbar horizontal layout id="mainToolbar" >
+			<div>
+            	<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+			</div>
           <!-- Application name -->
-           <h3>Sooner Emergency</h3>
-		   <div id="menuLinks" >
-			   <ul>
-				   <li><a>Home</a></li>
-				   <li><a>About Us</a></li>
-				   <li><a>Services</a></li>
-				   <li><a>Contact Us</a></li>
-				   <li><a>Links</a></li>
-				</ul>
+           <span class="title">Sooner Emergency Services, Inc.</span>
+		   		   
+		   <div>
+			   <paper-tabs id="navBar" selected="0" noink >
+				    <paper-tab>Home</paper-tab>
+					<paper-tab>About Us</paper-tab>
+					<paper-tab>Services</paper-tab>
+					<paper-tab>Contact Us</paper-tab>
+					<paper-tab>Links</paper-tab>
+      		   </paper-tabs>
 		   </div>
-
         </paper-toolbar>
+		
 	<paper-material elevation="1">
 		<h2>Hello World</h2>
 	</paper-material>
+	
+	</paper-header-panel>
+	
+</paper-drawer-panel>
+    
+    
+	
+	<template>
 </body>
+
+</html>
