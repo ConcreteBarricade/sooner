@@ -23,15 +23,20 @@
 		<div> Drawer Content...</div>
 	</paper-header-panel>  
 	
-	<paper-header-panel main>     
+	<paper-scroll-header-panel fixed main>     
 			<!-- Main Toolbar -->
         <paper-toolbar horizontal layout id="mainToolbar" >
 			<div>
             	<paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
 			</div>
           <!-- Application name -->
-           <span class="title">Sooner Emergency Services, Inc.</span>
-		   		   
+		 
+		 <div>
+          <span class="title">Sooner Emergency Services, Inc.</span>
+		  </br>
+		  <span class="bottom">Bill Inhofe, President</span>
+		  </div>
+		   <span class="title"></span>		   
 		   <div>
 			   <paper-tabs id="navBar" selected="0" noink >
 				    <paper-tab>Home</paper-tab>
@@ -41,13 +46,63 @@
 					<paper-tab>Links</paper-tab>
       		   </paper-tabs>
 		   </div>
+		   
         </paper-toolbar>
 		
-	<paper-material elevation="1">
-		<h2>Hello World</h2>
-	</paper-material>
+		
+		<h1>Sooner Emergency Services, Inc.</h1>
+		
+		
+	<section>		
+		<paper-material elevation="1">
+
+			<h3>We are happy to provide services for:</h3>
+			<ul>
+				<li>Cargo Removal and Storage</li>
+				<li>Haz-Mat Response</li>
+				<li>Vacuum of Solids & Liquids</li>
+				<li>Disposal Services</li>
+				<li>Certified Removala and Storage Services</li>
+				<li>Refrigerated Cargo Services</li>
+				<li>Traffic Control and Security</li>
+				<li>Containment Booms and Absorbents</li>
+			</ul>
+			
+		</paper-material>
+	</br>
+		<paper-material elevation="1">
+				<p>
+				Sooner Emergency Services  Inc.. has been in business 1978. Since then, we have responded to more than 2000 Emergency and Haz-Mat incidents. We have earned the reputation of being the "forerunner" in emergency and hazardous materials response. Sooner Emergency Service  Inc.  has the necessary equipment to complete hazardous tasks, without waiting for subcontracted equipment or personnel. Sooner Emergency is committed to the protection of the environment, as well as limiting the liability of our client from start to finish. 
+				</p>
+				<p>
+				At Sooner Emergency Services  Inc. we understand that  your image is on the line.  We use only the highest quality, most technically advanced equipment available today.  Our environmental division provides experienced consultants and personnel for site audits and site assessments including; buildings, structures, underground storage tanks, soils, and ground water. 
+				</p>
+				<p>
+				Employees of Sooner Emergency Services Inc. are trained professionals, for monitoring and sample collection, to provide accurate data. We work and operate in compliance with all regulatory requirements of OSHA, CERCLA, RCRA, TSCA, SARA TITLE III, and Clean Water Act. 
+				</p>
+		</paper-material>
+	</section>
 	
-	</paper-header-panel>
+	<footer>
+		<p>
+			Sooner Emergency Services Inc. and employees are covered by Workman Comp. Ins., Liability Ins. 
+			and Pollution Ins.
+		</p>
+		<div id="contact">
+		<p><b>Contact Information:</b></br>
+		(918) 260-8583</br>
+		   Fax: (918) 682-6001
+		</p>
+		</div>
+		<p></p>
+		<div id="emergency">
+			<h3>"Emergency Response Hotline"</h3>
+			<h4>Contact us 24/7</br>
+			918-583-2021</h4>
+		</div>
+	</footer>
+	
+	</paper-scroll-header-panel>
 	
 </paper-drawer-panel>
     
