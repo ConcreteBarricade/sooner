@@ -1,0 +1,230 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit" />
+  <title>Polymer Starter Kit</title>
+  <!-- Place favicon.ico in the `app/` directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#2E3AA1">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Polymer Starter Kit">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+
+  <!-- For shared styles, shared-styles.html import in elements.html -->
+  <style is="custom-style" include="shared-styles"></style>
+
+</head>
+
+<body unresolved class="fullbleed layout vertical">
+  <span id="browser-sync-binding"></span>
+  <template is="dom-bind" id="app">
+
+    <paper-drawer-panel force-narrow id="paperDrawerPanel">
+      <!-- Drawer Scroll Header Panel -->
+      <paper-scroll-header-panel drawer fixed>
+
+        <!-- Drawer Toolbar -->
+        <paper-toolbar id="drawerToolbar">
+          <span class="paper-font-title">Menu</span>
+        </paper-toolbar>
+
+        <!-- Drawer Content -->
+        <paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
+          <a data-route="home" href="{{baseUrl}}">
+            <span>Home</span>
+          </a>
+
+          <a data-route="users" href="{{baseUrl}}users">
+            <span>About Us</span>
+          </a>
+
+          <a data-route="contact" href="{{baseUrl}}contact">
+            <span>Services</span>
+          </a>
+          <a data-route="contact" href="{{baseUrl}}contact">
+            <span>Contact Us</span>
+          </a>
+          <a data-route="contact" href="{{baseUrl}}contact">
+            <span>Links</span>
+          </a>
+        </paper-menu>
+      </paper-scroll-header-panel>
+
+      <!-- Main Area -->
+      <paper-scroll-header-panel main id="headerPanelMain" condenses keep-condensed-header>
+
+        <!-- Main Toolbar -->
+        <paper-toolbar id="mainToolbar" class="tall">
+          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+          <span class="flex"></span>
+
+          <!-- Toolbar icons -->
+
+			   <paper-tabs id="navBar" selected="0" noink >
+				    <paper-tab>Home</paper-tab>
+					<paper-tab>About Us</paper-tab>
+					<paper-tab>Services</paper-tab>
+					<paper-tab>Contact Us</paper-tab>
+					<paper-tab>Links</paper-tab>
+      		   </paper-tabs>
+
+
+          <!-- Application name -->
+          <div class="middle middle-container center horizontal layout">
+            <div class="app-name">Polymer Starter Kit</div>
+          </div>
+
+          <!-- Application sub title -->
+          <div class="bottom bottom-container center horizontal layout">
+            <div class="bottom-title paper-font-subhead">The future of the web today</div>
+          </div>
+
+        </paper-toolbar>
+
+        <!-- Main Content -->
+        <div class="content">
+          <iron-pages attr-for-selected="data-route" selected="{{route}}">
+
+            <section data-route="home">
+              <paper-material elevation="1">
+                   
+                <div id="image">
+                    <img src="images/frontPic.jpg" alt="Frontpage Pic">
+                </div>
+                
+                <div id="services">
+                <h3>We are happy to provide services for:</h3>
+                <ul>
+                    <li>Cargo Removal and Storage</li>
+                    <li>Haz-Mat Response</li>
+                    <li>Vacuum of Solids & Liquids</li>
+                    <li>Disposal Services</li>
+                    <li>Certified Removala and Storage Services</li>
+                    <li>Refrigerated Cargo Services</li>
+                    <li>Traffic Control and Security</li>
+                    <li>Containment Booms and Absorbents</li>
+                </ul>
+                </div>
+			
+              </paper-material>
+
+              <paper-material elevation="1" class="paper-font-body2">
+                  <p>
+				Sooner Emergency Services  Inc.. has been in business 1978. Since then, we have responded to more than 2000 Emergency and Haz-Mat incidents. We have earned the reputation of being the "forerunner" in emergency and hazardous materials response. Sooner Emergency Service  Inc.  has the necessary equipment to complete hazardous tasks, without waiting for subcontracted equipment or personnel. Sooner Emergency is committed to the protection of the environment, as well as limiting the liability of our client from start to finish. 
+				</p>
+				<p>
+				At Sooner Emergency Services  Inc. we understand that  your image is on the line.  We use only the highest quality, most technically advanced equipment available today.  Our environmental division provides experienced consultants and personnel for site audits and site assessments including; buildings, structures, underground storage tanks, soils, and ground water. 
+				</p>
+				<p>
+				Employees of Sooner Emergency Services Inc. are trained professionals, for monitoring and sample collection, to provide accurate data. We work and operate in compliance with all regulatory requirements of OSHA, CERCLA, RCRA, TSCA, SARA TITLE III, and Clean Water Act. 
+				</p>
+              </paper-material>
+
+            </section>
+
+            <section data-route="users">
+              <paper-material elevation="1">
+                <h2 class="page-title">Users</h2>
+                <p>This is the users section</p>
+                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
+                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
+                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
+                <a href$="{{baseUrl}}users/Sam">Sam</a>
+              </paper-material>
+            </section>
+
+            <section data-route="user-info">
+              <paper-material elevation="1">
+                <h2 class="page-title">User: {{params.name}}</h2>
+                <div>This is {{params.name}}'s section</div>
+              </paper-material>
+            </section>
+
+            <section data-route="contact">
+              <paper-material elevation="1">
+                <h2 class="page-title">Contact</h2>
+                <p>This is the contact section</p>
+              </paper-material>
+            </section>
+
+          </iron-pages>
+          
+          <footer>
+		<p id="disclaimer">
+			Sooner Emergency Services Inc. and employees are covered by Workman Comp. Ins., Liability Ins. 
+			and Pollution Ins.
+		</p>
+		<div id="contact">
+		<p><b>Contact Information:</b></br>
+		(918) 260-8583</br>
+		   Fax: (918) 682-6001
+		</p>
+		</div>
+		
+		<div id="emergency">
+			<h3>"Emergency Response Hotline"</h3>
+			<h4>Contact us 24/7</br>
+			918-583-2021</h4>
+		</div>
+	</footer>
+          
+        </div>
+      </paper-scroll-header-panel>
+    </paper-drawer-panel>
+
+    <paper-toast id="toast">
+      <span class="toast-hide-button" role="button" tabindex="0" onclick="app.$.toast.hide()">Ok</span>
+    </paper-toast>
+
+  </template>
+
+  <!-- build:js scripts/app.js -->
+  <script src="scripts/app.js"></script>
+  <!-- endbuild-->
+</body>
+
+</html>
