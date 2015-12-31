@@ -19,8 +19,21 @@
      
 <paper-drawer-panel force-narrow>
 	<paper-header-panel drawer>
-		<paper-toolbar></paper-toolbar>
-		<div> Drawer Content...</div>
+        
+		<paper-menu class="list" attr-for-selected="data-route" selected="[[route]]">
+          <a data-route="home" href="{{baseUrl}}">   
+            <span>Home</span>
+          </a>
+          </br>
+          <a data-route="users" href="{{baseUrl}}users">
+            <span>Users</span>
+          </a>
+          </br>
+          <a data-route="contact" href="{{baseUrl}}contact">
+            <span>Contact</span>
+          </a>
+        </paper-menu>
+        
 	</paper-header-panel>  
 	
 	<paper-scroll-header-panel fixed main>     
@@ -55,7 +68,12 @@
 		
 	<section>		
 		<paper-material elevation="1">
-
+            
+            <div id="image">
+                <img src="images/frontPic.jpg" alt="Frontpage Pic">
+            </div>
+            
+            <div id="services">
 			<h3>We are happy to provide services for:</h3>
 			<ul>
 				<li>Cargo Removal and Storage</li>
@@ -67,6 +85,7 @@
 				<li>Traffic Control and Security</li>
 				<li>Containment Booms and Absorbents</li>
 			</ul>
+            </div>
 			
 		</paper-material>
 	</br>
@@ -84,7 +103,7 @@
 	</section>
 	
 	<footer>
-		<p>
+		<p id="disclaimer">
 			Sooner Emergency Services Inc. and employees are covered by Workman Comp. Ins., Liability Ins. 
 			and Pollution Ins.
 		</p>
@@ -94,7 +113,7 @@
 		   Fax: (918) 682-6001
 		</p>
 		</div>
-		<p></p>
+		
 		<div id="emergency">
 			<h3>"Emergency Response Hotline"</h3>
 			<h4>Contact us 24/7</br>
