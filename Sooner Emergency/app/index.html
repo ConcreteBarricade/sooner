@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit" />
-  <title>Polymer Starter Kit</title>
+  <title>Sooner Emergency</title>
   <!-- Place favicon.ico in the `app/` directory -->
 
   <!-- Chrome for Android theme color -->
@@ -104,8 +104,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Toolbar icons -->
 
-			   <paper-tabs id="navBar" selected="0" noink >
-				    <paper-tab>Home</paper-tab>
+			   <paper-tabs id="navBar" selected="0" noink attr-for-selected="data-route" selected="[[route]]">
+				    <paper-tab data-route="home" href="{{baseUrl}}">Home</paper-tab>
 					<paper-tab>About Us</paper-tab>
 					<paper-tab>Services</paper-tab>
 					<paper-tab>Contact Us</paper-tab>
