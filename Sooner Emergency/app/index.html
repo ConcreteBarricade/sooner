@@ -78,17 +78,17 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <span>Home</span>
           </a>
 
-          <a data-route="users" href="{{baseUrl}}users">
+          <a data-route="about" href="{{baseUrl}}about">
             <span>About Us</span>
           </a>
 
-          <a data-route="contact" href="{{baseUrl}}contact">
+          <a data-route="services" href="{{baseUrl}}services">
             <span>Services</span>
           </a>
           <a data-route="contact" href="{{baseUrl}}contact">
             <span>Contact Us</span>
           </a>
-          <a data-route="contact" href="{{baseUrl}}contact">
+          <a data-route="links" href="{{baseUrl}}links">
             <span>Links</span>
           </a>
         </paper-menu>
@@ -104,23 +104,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
           <!-- Toolbar icons -->
 
-			   <paper-tabs id="navBar" selected="0" noink attr-for-selected="data-route" selected="[[route]]">
+			   <paper-tabs id="navBar" noink attr-for-selected="data-route" selected="{{route}}">
 				    <paper-tab data-route="home" href="{{baseUrl}}">Home</paper-tab>
-					<paper-tab>About Us</paper-tab>
-					<paper-tab>Services</paper-tab>
-					<paper-tab>Contact Us</paper-tab>
-					<paper-tab>Links</paper-tab>
+					<paper-tab data-route="about" href="{{baseUrl}}about">About Us</paper-tab>
+					<paper-tab data-route="services" href="{{baseUrl}}services">Services</paper-tab>
+					<paper-tab data-route="contact" href="{{baseUrl}}contact">Contact Us</paper-tab>
+					<paper-tab data-route="links" href="{{baseUrl}}links">Links</paper-tab>
       		   </paper-tabs>
 
 
           <!-- Application name -->
           <div class="middle middle-container center horizontal layout">
-            <div class="app-name">Polymer Starter Kit</div>
+            <div class="app-name">Sooner Emergency Services, Inc.</div>
           </div>
 
           <!-- Application sub title -->
           <div class="bottom bottom-container center horizontal layout">
-            <div class="bottom-title paper-font-subhead">The future of the web today</div>
+            <div class="bottom-title paper-font-subhead">Bill Inhofe, President </div>
           </div>
 
         </paper-toolbar>
@@ -166,28 +166,33 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
             </section>
 
-            <section data-route="users">
+            <section data-route="about">
               <paper-material elevation="1">
-                <h2 class="page-title">Users</h2>
-                <p>This is the users section</p>
-                <a href$="{{baseUrl}}users/Addy">Addy</a><br>
-                <a href$="{{baseUrl}}users/Rob">Rob</a><br>
-                <a href$="{{baseUrl}}users/Chuck">Chuck</a><br>
-                <a href$="{{baseUrl}}users/Sam">Sam</a>
+                <h2 class="page-title">About</h2>
+                <p>This is the about section</p>
+                
               </paper-material>
             </section>
-
-            <section data-route="user-info">
+            
+            <section data-route="services">
               <paper-material elevation="1">
-                <h2 class="page-title">User: {{params.name}}</h2>
-                <div>This is {{params.name}}'s section</div>
+                <h2 class="page-title">Services</h2>
+                <p>This is the Services section</p>
               </paper-material>
             </section>
+            
 
             <section data-route="contact">
               <paper-material elevation="1">
                 <h2 class="page-title">Contact</h2>
                 <p>This is the contact section</p>
+              </paper-material>
+            </section>
+            
+            <section data-route="links">
+              <paper-material elevation="1">
+                <h2 class="page-title">Links</h2>
+                <p>This is the links section</p>
               </paper-material>
             </section>
 
