@@ -12,3 +12,10 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
+
+
+@media screen and (min-width:850px) {
+	.hideWhenLarge {
+		display: none;
+	}
+}

@@ -99,13 +99,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         <!-- Main Toolbar -->
         <paper-toolbar id="mainToolbar" class="tall">
-          <paper-icon-button id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
+          <paper-icon-button class="hideWhenLarge" id="paperToggle" icon="menu" paper-drawer-toggle></paper-icon-button>
           <span class="flex"></span>
 
           <!-- Toolbar icons -->
 
 			   <paper-tabs id="navBar" noink attr-for-selected="data-route" selected="{{route}}">
-				    <paper-tab data-route="home" href="{{baseUrl}}">Home</paper-tab>
+				    <paper-tab class="hideWhenLarge" data-route="home" href="{{baseUrl}}">Home</paper-tab>
 					<paper-tab data-route="about" href="{{baseUrl}}about">About Us</paper-tab>
 					<paper-tab data-route="services" href="{{baseUrl}}services">Services</paper-tab>
 					<paper-tab data-route="contact" href="{{baseUrl}}contact">Contact Us</paper-tab>
