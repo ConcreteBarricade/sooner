@@ -13,6 +13,11 @@ body {
   color: #333;
 }
 
+footer {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auth;
+}
 
 @media screen and (min-width:850px) {
 	.hideWhenLarge {
